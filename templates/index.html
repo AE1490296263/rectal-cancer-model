@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>预测应用</title>
+    <!-- 引入 Bootstrap 样式 -->
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="mb-4 text-center">输入特征值进行预测</h1>
+        
+        <!-- 表单区域 -->
+        <form method="post" class="bg-white p-4 rounded shadow">
+            <div class="mb-3">
+                <label for="CIKP" class="form-label">CIKP:</label>
+                <input type="text" name="CIKP" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="CEA" class="form-label">CEA:</label>
+                <input type="text" name="CEA" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="ALB" class="form-label">ALB:</label>
+                <input type="text" name="ALB" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="PT" class="form-label">PT:</label>
+                <input type="text" name="PT" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="Cyfra211" class="form-label">Cyfra211:</label>
+                <input type="text" name="Cyfra211" class="form-control" required>
+            </div>
+            
+            <!-- 提交按钮 -->
+            <button type="submit" class="btn btn-primary w-100">
+                预测
+            </button>
+        </form>
+    </div>
+</body>
+</html>
